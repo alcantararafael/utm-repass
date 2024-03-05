@@ -1,4 +1,5 @@
 var whitelistUTM = ['vemcogroup.com/pt', 'latam.vemcogroup.com', 'localhost', '127.']
+var ignoreLinks = ['tel:', 'mailto:']
 var debugUTMActive = true
 
 var debugUTM = Object.assign({}, console)
@@ -43,7 +44,12 @@ function UTMRepass(){
         if (!href) {
             continue;
         }
-        
+        // Skip links that are not on the whitelist
+        if (ignoreLinks.some(item => href.includes(item))) {
+            console.log('Ignoring Link: '+href)
+            continue;
+        }
+
         var utmParamsCopy = utmParams;
 
         // Get the query string from the href

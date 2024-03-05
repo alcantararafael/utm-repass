@@ -3,13 +3,13 @@
 <head>
     <title>UTM Repass</title>
     <!-- Using JSDelivr with Github: https://www.jsdelivr.com/?docs=gh -->
-    
+
     <!-- 
         <script src="utm_repass.js"></script>
         <script src="//raw.githubusercontent.com/alcantararafael/utm-repass/main/utm_repass.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/alcantararafael/utm-repass/utm_repass.js"></script>
     -->
-    <script src="https://cdn.jsdelivr.net/gh/alcantararafael/utm-repass/utm_repass.js"></script>
+    <script src="utm_repass.js"></script>
 
     <script>
         function debugAllParameter(){
@@ -35,6 +35,9 @@
     <a href="utm_repass-test.php?test=a">utm_repass-test.php?test=a</a><BR>
     <a href="utm_repass-test.php?utm_campaign=A&utm_source=B&val=C&test=D">utm_repass-test.php?utm_campaign=A&utm_source=B&val=C&test=D</a><BR>
     <a href="utm_repass-test.php?utm_campaign=CAMPAIGN-IN-LINK&utm_source=TestSource&utm_medium=TestMedium&utm_content=TestContent&utm_term=TestTerm">utm_repass-test?utm_campaign=CAMPAIGN-IN-LINK&utm_source=TestSource&utm_medium=TestMedium&utm_content=TestContent&utm_term=TestTerm</a><BR> 
+
+    <a href="tel:11900000000">tel:11900000000</a><BR>
+    <a href="mailto:contact@company.com">mailto:contact@company.com</a><BR>
 
     <div id="debug">
         <h2>Debug</h2>

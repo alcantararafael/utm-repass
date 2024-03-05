@@ -7,7 +7,7 @@
     <!-- 
         <script src="utm_repass.js"></script>
         <script src="//raw.githubusercontent.com/alcantararafael/utm-repass/main/utm_repass.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/alcantararafael/utm-repass/utm_repass.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/alcantararafael/utm-repass@main/utm_repass.js"></script>
     -->
     <script src="utm_repass.js"></script>
 

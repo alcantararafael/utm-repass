@@ -1,5 +1,5 @@
 var whitelistUTM = ['vemcogroup.com/pt', 'latam.vemcogroup.com', 'localhost', '127.']
-var debugUTMActive = false
+var debugUTMActive = true
 
 var debugUTM = Object.assign({}, console)
 //personalized function log

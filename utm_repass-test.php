@@ -2,7 +2,8 @@
 
 <head>
     <title>UTM Repass</title>
-    <script src="utm_repass.js"></script>
+    <!-- <script src="utm_repass.js"></script> -->
+    <script src="https://raw.githubusercontent.com/alcantararafael/utm-repass/main/utm_repass.js"></script>
 
     <script>
         function debugAllParameter(){

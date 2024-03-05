@@ -2,8 +2,14 @@
 
 <head>
     <title>UTM Repass</title>
-    <!-- <script src="utm_repass.js"></script> -->
-    <script src="https://raw.githubusercontent.com/alcantararafael/utm-repass/main/utm_repass.js"></script>
+    <!-- Using JSDelivr with Github: https://www.jsdelivr.com/?docs=gh -->
+    
+    <!-- 
+        <script src="utm_repass.js"></script>
+        <script src="//raw.githubusercontent.com/alcantararafael/utm-repass/main/utm_repass.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/alcantararafael/utm-repass/utm_repass.js"></script>
+    -->
+    <script src="https://cdn.jsdelivr.net/gh/alcantararafael/utm-repass/utm_repass.js"></script>
 
     <script>
         function debugAllParameter(){

@@ -1,4 +1,5 @@
 var whitelistUTM = ['vemcogroup.com/pt', 'latam.vemcogroup.com', 'localhost', '127.'];
+//var whitelistUTM = ['vemcogroup.com/pt', 'latam.vemcogroup.com', 'localhost'];
 var ignoreLinks = ['tel:', 'mailto:'];
 var debugUTMActive = true;
 
@@ -35,20 +36,15 @@ function appendUTMParamsToLinks() {
     var links = document.getElementsByTagName("a");
     var utmParams = getUTMParams();
 
+    
+
     for (var i = 0; i < links.length; i++) {
         var link = links[i];
         var href = link.getAttribute("href");
-        var pageURl = window.location.href;
 
         // Skip invalid or ignored links
-        if (!href || ignoreLinks.some((item) => pageURl.includes(item))) {
+        if (!href || ignoreLinks.some((item) => href.includes(item))) {
             debugUTM.log("Ignoring Link:", href);
-            continue;
-        }
-
-        // Check if the link is on the whitelist
-        if (!whitelistUTM.some((item) => pageURl.includes(item))) {
-            debugUTM.log("Link not on whitelist:", href);
             continue;
         }
 
@@ -84,6 +80,13 @@ function getQueryStringUTM(params) {
 
 // Initialize UTM Repass when the page has loaded
 window.addEventListener("load", () => {
+    // Check if the link is on the whitelist
+    var pageURl = window.location.href;
+    if (!whitelistUTM.some((item) => pageURl.includes(item))) {
+        debugUTM.log("Link not on whitelist:", href);
+        return
+    }
+    
     storeUTMParams(); // Store UTM parameters in session storage
     appendUTMParamsToLinks(); // Append UTM parameters to links
 });

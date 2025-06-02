@@ -8,6 +8,7 @@
         <script src="utm_repass.js"></script>
         <script src="//raw.githubusercontent.com/alcantararafael/utm-repass/main/utm_repass.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/alcantararafael/utm-repass@main/utm_repass.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/alcantararafael/utm-repass@fd4da0c/utm_repass-v2.js"></script>
     -->
     <script src="utm_repass-v2.js"></script>
 

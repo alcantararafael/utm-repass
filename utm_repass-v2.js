@@ -36,8 +36,6 @@ function appendUTMParamsToLinks() {
     var links = document.getElementsByTagName("a");
     var utmParams = getUTMParams();
 
-    
-
     for (var i = 0; i < links.length; i++) {
         var link = links[i];
         var href = link.getAttribute("href");
@@ -79,7 +77,7 @@ function getQueryStringUTM(params) {
 }
 
 // Initialize UTM Repass when the page has loaded
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", () => {
     // Check if the link is on the whitelist
     var pageURl = window.location.href;
     if (!whitelistUTM.some((item) => pageURl.includes(item))) {

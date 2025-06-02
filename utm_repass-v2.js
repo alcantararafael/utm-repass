@@ -78,10 +78,11 @@ function getQueryStringUTM(params) {
 
 // Initialize UTM Repass when the page has loaded
 window.addEventListener("DOMContentLoaded", () => {
+    debugUTM.log("UTM Repass initialized");
     // Check if the link is on the whitelist
     var pageURl = window.location.href;
     if (!whitelistUTM.some((item) => pageURl.includes(item))) {
-        debugUTM.log("Link not on whitelist:", href);
+        debugUTM.log("Link not on whitelist:", pageURl);
         return
     }
     
